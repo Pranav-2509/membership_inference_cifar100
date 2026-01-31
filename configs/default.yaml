@@ -1,0 +1,18 @@
+# Default MIA experiment config (CIFAR-10)
+
+# Data splits (from CIFAR-10 train set)
+n_members: 25000      # samples used for training
+n_non_members: 10000  # held-out "non-members" for MIA evaluation
+n_calibration: 5000   # optional calibration subset
+
+# Training
+epochs: 3
+batch_size: 128
+lr: 0.01
+
+# MIA
+score_type: "loss"    # "loss" (higher = non-member) or "confidence" (higher = member)
+save_model: true
+
+# Reproducibility
+seed: 11

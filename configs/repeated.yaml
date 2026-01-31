@@ -1,0 +1,15 @@
+# Config for repeated MIA experiments (multiple seeds)
+
+n_members: 25000
+n_non_members: 10000
+n_calibration: 5000
+
+epochs: 30
+batch_size: 128
+lr: 0.01
+
+score_type: "loss"
+save_model: false
+
+# Run with seeds [0, 1, ..., n_seeds - 1]
+n_seeds: 5

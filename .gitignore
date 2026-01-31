@@ -1,0 +1,15 @@
+# Raw datasets (DO NOT COMMIT)
+datasets/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyTorch / ML artifacts
+*.pt
+*.pth
+*.ckpt
+
+# Logs / outputs
+runs/
+outputs/

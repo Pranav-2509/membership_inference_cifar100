@@ -1,0 +1,13 @@
+# Quick run (small subsets, few epochs) for debugging
+
+n_members: 2000
+n_non_members: 1000
+n_calibration: 500
+
+epochs: 5
+batch_size: 64
+lr: 0.01
+
+score_type: "loss"
+save_model: false
+seed: 42

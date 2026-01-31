@@ -1,0 +1,22 @@
+# Single-point MIA: fix one sample x, repeat train with/without x, build loss dists, NP threshold, evaluate.
+# Dataset: CIFAR-100 (50k train, 100 classes).
+
+# Target point (index in CIFAR-100 train). Set to null to choose at random.
+target_index: null
+num_classes: 100
+
+# Loop
+n_iterations: 25
+subset_size: 1000
+
+# Training (per model, per iteration)
+epochs: 3
+batch_size: 128
+lr: 0.01
+
+# Neyman-Pearson
+alpha: 0.15
+
+# Output
+save_plots: true
+seed: 42
