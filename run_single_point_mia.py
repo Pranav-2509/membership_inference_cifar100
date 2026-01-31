@@ -13,7 +13,7 @@ if str(_parent) not in sys.path:
 
 import yaml
 
-from membership_inference_cifar10.experiments.run_single_point_mia import run_single_point_mia
+from membership_inference_cifar100.experiments.run_single_point_mia import run_single_point_mia
 
 
 def main() -> None:
